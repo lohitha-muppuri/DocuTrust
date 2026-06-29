@@ -3,16 +3,16 @@ Enterprise Advanced RAG Platform with Automated Self-Correction
 
 DocuTrust AI is a Retrieval-Augmented Generation (RAG) based system that allows users to upload PDFs and ask questions with citation-backed, confidence-scored answers using an intelligent self-correction pipeline (CRAG).
 
-🚀 Features
-📄 PDF upload and processing
-🔍 Semantic chunk-based retrieval
-🧠 RAG pipeline using embeddings + vector search
-🔄 Self-correction (CRAG) for low confidence answers
-📊 Confidence scoring system
-📌 Page-level citations
-🗄 Query logging system
-⚡ FastAPI backend
-🏗 Architecture
+#Features
+PDF upload and processing
+Semantic chunk-based retrieval
+ RAG pipeline using embeddings + vector search
+ Self-correction (CRAG) for low confidence answers
+Confidence scoring system
+ Page-level citations
+ Query logging system
+ FastAPI backend
+ Architecture
 
 PDF Upload
 → Text Extraction
@@ -23,8 +23,7 @@ PDF Upload
 → Confidence Scoring
 → Self-Correction (if needed)
 → Final Answer with Citations
-
-💻 Tech Stack
+# Tech Stack
 Frontend
 HTML
 CSS
@@ -37,7 +36,7 @@ FAISS
 Sentence Transformers
 MongoDB
 PyPDF
-📂 Project Structure
+# Project Structure
 DocuTrust-AI/
 │
 ├── backend/
@@ -56,22 +55,22 @@ DocuTrust-AI/
 ├── README.md
 └── ENV_SETUP.txt
 ⚙️ Setup Instructions
-1️⃣ Create Virtual Environment
+# Create Virtual Environment
 python -m venv venv
 
-✅ venv is built into Python (no extra installation required)
+# venv is built into Python (no extra installation required)
 
-2️⃣ Activate Virtual Environment
-🪟 Windows (CMD / PowerShell)
+2️. Activate Virtual Environment
+ Windows (CMD / PowerShell)
 venv\Scripts\activate
 
 If PowerShell blocks activation:
 
 Set-ExecutionPolicy Unrestricted -Scope Process
 venv\Scripts\activate
-🍎 Mac / Linux
+# Mac / Linux
 source venv/bin/activate
-✅ Confirm Activation
+ Confirm Activation
 
 After activation, you should see:
 
@@ -79,15 +78,15 @@ After activation, you should see:
 
 This means all dependencies will install inside the virtual environment.
 
-3️⃣ Install Dependencies
+3️. Install Dependencies
 pip install -r requirements.txt
-4️⃣ Run Backend Server
+4️. Run Backend Server
 python -m uvicorn main:app --reload
 
 Backend will run at:
 
 http://127.0.0.1:8000
-5️⃣ Run Frontend
+5️. Run Frontend
 Option 1 (Direct)
 
 Open:
@@ -99,7 +98,7 @@ python -m http.server 5500
 Then open:
 
 http://localhost:5500
-🔄 Daily Workflow (Important)
+#Daily Workflow (Important)
 
 Every time you reopen the project:
 
@@ -109,14 +108,14 @@ source venv/bin/activate  # Mac/Linux
 
 # Step 2: Run backend
 python -m uvicorn main:app --reload
-🔐 Environment Variables
+Environment Variables
 
 Create a .env file and configure:
 
 OPENAI_API_KEY=your_key_here
 DATABASE_URL=your_database_url
 SECRET_KEY=your_secret_key
-🎯 Problem Statement
+Problem Statement
 
 Traditional document QA systems suffer from:
 
@@ -130,12 +129,13 @@ RAG pipeline
 Confidence scoring
 Self-correction system
 Strict citation enforcement
-🔮 Future Enhancements
+#Future Enhancements
 OCR support for scanned PDFs
 Multi-document search
 Role-based access control
 Cloud deployment
 LLM fine-tuning
-👩‍💻 Author
+ 
+Author
 
 Developed by Lohitha Muppuri
